@@ -1,0 +1,246 @@
+.sidebar{
+    width: 225px;
+    overflow-x:hidden;
+    height: 100%;
+    position: fixed;
+    overflow-y: hidden;
+}
+
+.sidebar:hover{
+    overflow-y: auto;
+
+}
+
+.sidebar-left-corner{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+.bars{
+    width: 30px;
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 6px;
+    border-radius: 50%;
+}
+
+.bars:hover{
+    cursor: pointer;
+    width: 30px;
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 6px;
+    border-radius: 50%;
+    transition: 1s ease-out;
+    background-color: rgb(241, 239, 239);
+}
+
+.youtube_logo{
+    width: 110px;
+    height: 30px;
+    margin-left: 20px;
+    padding-top: 7px;
+}
+
+.youtube_logo:hover{
+    cursor: pointer;
+}
+
+.sidebar-categories{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.sidebar-categories div {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-bottom: 4px;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+.sidebar-categories div:hover {
+    background:rgb(243, 243, 243) ;
+    cursor: pointer;
+}
+
+.sidebar-categories img{
+    margin-right: 20px;
+    width: 20px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.sidebar-categories p{
+    font-weight: 400;
+    font-size: small;
+}
+
+.sidebar hr{
+    margin: 10px 10px;
+    color: rgb(231, 229, 229);
+    border: none;
+    border-top: 1px solid;
+}
+
+.you-categories{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.you-categories div {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-bottom: 4px;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+.you-categories div:hover {
+    background:rgb(243, 243, 243) ;
+}
+
+.you-categories p{
+    font-weight: 400;
+    font-size: small;
+}
+
+.you-categories img{
+    margin-right: 20px;
+    width: 20px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.right-arrow{
+    font-size: small;
+    padding-left: 10px;
+}
+
+.you-categories-you{
+    width: 100%;
+    height: 45px;
+}
+
+.explore-categories-explore{
+    width: 100%;
+    height: 45px;
+}
+
+.explore-categories{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.explore-categories div {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-bottom: 4px;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+.explore-categories div:hover {
+    background:rgb(243, 243, 243) ;
+}
+
+.explore-categories p{
+    font-weight: 400;
+    font-size: small;
+}
+
+.explore-categories img{
+    margin-right: 20px;
+    width: 20px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.last-categories{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.last-categories div {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-bottom: 4px;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+.last-categories div:hover {
+    background:rgb(243, 243, 243) ;
+}
+
+.last-categories p{
+    font-weight: 400;
+    font-size: small;
+}
+
+.last-categories img{
+    margin-right: 20px;
+    width: 20px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.last-texts{
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(66, 60, 60);
+    margin-left: 15px;
+    height: 150px;
+}
+
+.last-texts span{
+    cursor: pointer;
+    padding-left: 5px;
+}
+
+.firstpart{
+    margin-bottom: 18px;
+    line-height: 22px;
+}
+
+.secondpart{
+    line-height: 22px;
+}
+
+.copyright{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size:smaller;
+    color: rgb(161, 159, 159);
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+    height: 6px;
+    background: rgb(116, 116, 116);
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+    margin-top: 80px;
+}
