@@ -1,14 +1,20 @@
 .sidebar{
+    top: 0;
+    left: 0;
+    bottom: 0;
     width: 225px;
-    overflow-x:hidden;
     height: 100%;
     position: fixed;
+    overflow-x:hidden;
     overflow-y: hidden;
 }
 
 .sidebar:hover{
+    top: 0;
+    left: 0;
+    bottom: 0;
     overflow-y: auto;
-
+    
 }
 
 .sidebar-left-corner{
@@ -16,27 +22,26 @@
     flex-direction: row;
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 15px;
     border-radius: 50%;
     font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-left: -20px;
 }
 
 .bars{
-    width: 30px;
-    height: 40px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 6px;
+    width: 25px;
+    height: 30px;
+    padding: 4px 8px;
     border-radius: 50%;
+    margin-top: 3px;
 }
 
 .bars:hover{
     cursor: pointer;
-    width: 30px;
-    height: 40px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 6px;
+    width: 25px;
+    height: 30px;
+    padding: 4px 8px;
     border-radius: 50%;
     transition: 1s ease-out;
     background-color: rgb(241, 239, 239);

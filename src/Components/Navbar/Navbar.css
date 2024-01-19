@@ -1,0 +1,190 @@
+.navbar{
+    margin-left: 225px;
+    height: 100px;
+    border: none;
+    width: calc(100% - 227px);
+    overflow-y: hidden;
+}
+
+.navbar-search-bar{
+    padding-left: 150px;
+    padding-top: 10px;
+    
+}
+
+.navbar form {
+    display: flex;
+    align-items: center;
+}
+
+.navbar form input{
+    display: flex;
+    width: 480px;
+    height: 38px;
+    padding-left: 45px;
+    font-size: 17px;
+    border: 1px solid rgb(194, 193, 193);
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    box-shadow: inset 0 3px 3px -3px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+.navbar form input::placeholder{
+    color: rgb(148, 147, 147);
+}
+
+.navbar form input:focus {
+    box-shadow: inset 0 3px 3px -3px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgb(99, 77, 179);
+}
+
+.navbar form input:active{
+    border: 1px solid rgb(65, 29, 196);
+}
+
+.navbar form .searchicon {
+    margin-left: -515px;
+    font-size: 19px;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.searchicon {
+    visibility: hidden;
+}
+
+.navbar form:focus-within .searchicon {
+    visibility: visible;
+}
+
+.navbar form button{
+    margin-left: 496px;
+    width: 70px;
+    height: 42px;
+    background: rgb(247, 247, 247);
+    border: 1px solid rgb(194, 193, 193);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-left: none;
+}
+
+.search-btn-search-icon{
+    font-size: 22px;
+}
+
+.searchbar-search-btn {
+    position: relative;
+}
+
+.searchbar-search-btn:hover {
+    cursor: pointer;
+}
+
+.searchbar-search-btn:hover::after {
+    content: "Search";
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    opacity: 0.7;
+    font-size: 12px;
+    padding: 10px 8px;
+    margin-bottom: -15px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    white-space: nowrap;
+    visibility: visible;
+    transform: translateX(-50%);
+    transition: visibility 0s, opacity 0.3s linear;
+}
+
+.voice-search{
+    display: flex;
+    margin-top: -42px;
+    margin-left: 615px;
+}
+
+.voice-search-btn:hover{
+    cursor: pointer;
+    background-color: rgb(218, 218, 218);
+}
+
+.voice-search-btn{
+    border: none;
+    padding: 12px 16px;
+    border-radius: 50px;
+}
+
+.fa-microphone{
+    font-size: 20px;
+}
+
+.bellicon{
+    font-size: 20px;
+}
+
+.bellicon-badge{
+    border: none;
+    font-size: 2px;
+}
+
+.bell:hover{
+    color: rgb(36, 35, 35);
+}
+
+.bell{
+    margin-top: -44px;
+    margin-left: 1020px;
+}
+
+.bell-btn{
+    border: none;
+    padding: 8px 10px;
+    border-radius: 50px;
+    background: none;
+}
+
+.bell-btn:hover{
+    cursor: pointer;
+    background-color: rgb(218, 218, 218);
+}
+
+.voice-search-btn:hover::after {
+    content: "Search with your voice";
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    opacity: 0.7;
+    font-size: 12px;
+    padding: 10px 8px;
+    margin-bottom: -15px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    white-space: nowrap;
+    visibility: visible;
+    transform: translateX(-50%);
+    transition: visibility 0s, opacity 0.3s linear;
+}
+
+.channel{
+    margin-left: 990px;
+    margin-top: -28px;
+    display: flex;
+}
+
+.channel img{
+    font-size: 28px;
+    height: 16px;
+    width: 22px;
+}
+
+.profile{
+    margin-left: 1080px;
+    margin-top: -20px;
+}
+
+.categories{
+    display: flex;
+}
