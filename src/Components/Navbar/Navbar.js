@@ -4,6 +4,7 @@ import { SearchOutlined, BellOutlined } from '@ant-design/icons';
 import { Badge } from 'antd';
 import channel_icon from "../../Assets/channel_icon.png"
 import profile_icon from "../../Assets/profile_icon.png"
+import Categories from "../Categories_Horizontal/Categories";
 
 export default function Navbar() {
 
@@ -40,9 +41,29 @@ export default function Navbar() {
                 <img className='profile_icon' src={profile_icon} alt='profile_icon' />
             </div>
 
-            {/* <div className='categories'>
-                <button>All</button>
-            </div> */}
+            <div className='categories'>
+                <button className='categorie-all'>All</button>
+                <Categories name="Mixes" />
+                <Categories name="Music" />
+                <Categories name="Bollywood Music" />
+                <Categories name="Ghazal" />
+                <Categories name="Reverberation" />
+                <Categories name="Coolio" />
+                <Categories name="Nusrat Fateh Ali Khan" />
+                <Categories name="CSS" />
+                <Categories name="Indie Music" />
+                <Categories name="Python" />
+                <Categories name="Reggae" />
+                <Categories name="History" />
+                <Categories name="Classical Music" />
+                <Categories name="Live" />
+                <Categories name="Podcasts" />
+                <Categories name="News" />
+                <Categories name="Pop Music" />
+                <Categories name="Recently uploaded" />
+                <Categories name="Watched" />
+                <Categories name="New to you" />
+            </div>
         </div>
     )
 }

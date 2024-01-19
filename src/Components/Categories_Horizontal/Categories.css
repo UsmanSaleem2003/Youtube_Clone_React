@@ -1,0 +1,13 @@
+.categoriez{
+    border: none;
+    border-radius: 6px;
+    width: auto;
+    height: auto;
+    padding: 8px 12px;
+    font-weight: 500;
+    background: rgb(241, 240, 240);
+    font-family: "Roboto","Arial",sans-serif;
+    color: black;
+    flex-shrink: 0;
+    font-size: 14px;
+}   
