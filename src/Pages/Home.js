@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './Home.css';
 
 export default function Home() {
+
     const [playlistData, setPlaylistData] = useState(null);
 
     function timeSincePublished(publishedAt) {
@@ -29,7 +30,7 @@ export default function Home() {
         const fetchData = async () => {
             try {
                 const response = await fetch(
-                    'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=90&playlistId=UU-rP-oFlxQGpSLYHBlhIWkg&key=[YOUR_API_KEY]'
+                    'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=90&playlistId=UU-rP-oFlxQGpSLYHBlhIWkg&key=AIzaSyDbD7MvZD4FESVfh-xloRD4VNWNBdj5vgo'
                 );
 
                 if (!response.ok) {
@@ -38,7 +39,7 @@ export default function Home() {
 
                 const data = await response.json();
                 setPlaylistData(data);
-                // console.log(data);
+                console.log(data);
             } catch (error) {
                 console.error('Error fetching data:', error);
             }

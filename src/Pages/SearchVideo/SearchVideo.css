@@ -1,0 +1,68 @@
+.search-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.search-item:hover {
+    transform: scale(1.05);
+}
+
+.search-item {
+    display: flex;
+    /* display: inline-block; */
+    box-sizing: border-box;
+    width: 30%;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: transform 0.3s;/* Set a maximum width for the video container */
+}
+
+.searched-video-link {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    flex-direction: column;
+}
+
+.video-thumbnail{
+    width: 350px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.video-thumbnail:hover{
+    border-radius: 0px;
+    transition: 0.5s ease;
+
+}
+
+.video-info {
+    padding: 10px;
+    width: auto;
+}
+
+.video-title {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.channel_name{
+    font-size: 14px;
+    margin-top: -3px;
+    padding-left: 10px;
+    color: rgb(77, 77, 77);
+}
+
+
+
+.publishedat {
+    margin-top: -8px;
+    font-size: 14px;
+    color: rgb(77, 77, 77);
+    padding-left: 10px;
+}
