@@ -46,7 +46,7 @@ export default function SearchVideo(props) {
         };
 
         fetch_Searched_Data();
-    }, []);
+    }, [props.text]);
 
 
 
