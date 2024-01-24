@@ -30,7 +30,7 @@ export default function SearchVideo(props) {
         const fetch_Searched_Data = async () => {
             try {
                 const response_of_searched_keyword = await fetch(
-                    `https://www.googleapis.com/youtube/v3/search?key=AIzaSyDbD7MvZD4FESVfh-xloRD4VNWNBdj5vgo&maxResults=15&type=video&part=snippet&q=${props.text}`
+                    `https://www.googleapis.com/youtube/v3/search?key=[YOUR_API_KEY]&maxResults=15&type=video&part=snippet&q=${props.text}`
                 );
 
                 if (!response_of_searched_keyword.ok) {
@@ -39,7 +39,7 @@ export default function SearchVideo(props) {
 
                 const data = await response_of_searched_keyword.json();
                 setsearchedTXT(data);
-                console.log(data);
+                // console.log(data);
             } catch (error) {
                 console.error('Error fetching searched data:', error);
             }
@@ -57,18 +57,20 @@ export default function SearchVideo(props) {
             {searchedTXT && searchedTXT.items.map((item) => (
                 <div className='search-item' key={item.id.videoId}>
                     <a href={`https://www.youtube.com/watch?v=${item.id.videoId}`} className='searched-video-link' target='_blank'>
-                        <img src={item.snippet.thumbnails.high.url} alt={item.snippet.title} className='video-thumbnail' />
-                        <div className="video-info">
-                            <div className="video-title">
-                                {item.snippet.title}
-                                <span className="dots">...</span>
+                        <img src={item.snippet.thumbnails.high.url} alt={item.snippet.title} className='video-thumbnail-search' />
+                        <div className='video-all-info'>
+                            <div className="video-info">
+                                <div className="video-title-div">
+                                    <h2 className='video-title-search'>{item.snippet.title}</h2>
+                                </div>
+                                {item.snippet.publishedAt && (
+                                    <p className="publishedat-search"><span className='time-clock'>⌚</span>{timeSincePublished(item.snippet.publishedAt)}</p>
+                                )}
                             </div>
+                            <br />
+                            <h4 className="channel_name-search">Channel : {item.snippet.channelTitle}</h4>
+                            <p className="description">{(item.snippet.description)}</p>
                         </div>
-                        <p className="channel_name">{item.snippet.channelTitle}</p>
-                        {item.snippet.publishedAt && (
-                            <p className="publishedat">{timeSincePublished(item.snippet.publishedAt)}</p>
-                        )}
-
                     </a>
                 </div>
             ))}

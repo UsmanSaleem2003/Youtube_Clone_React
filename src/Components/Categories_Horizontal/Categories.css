@@ -10,4 +10,10 @@
     color: black;
     flex-shrink: 0;
     font-size: 14px;
-}   
+}
+
+.categoriez:hover{
+    cursor: pointer;
+    background: rgb(226, 226, 226);
+    transition: 0.25s ease-in;
+}

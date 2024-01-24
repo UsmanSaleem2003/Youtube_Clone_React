@@ -30,7 +30,7 @@ export default function Home() {
         const fetchData = async () => {
             try {
                 const response = await fetch(
-                    'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=90&playlistId=UU-rP-oFlxQGpSLYHBlhIWkg&key=AIzaSyDbD7MvZD4FESVfh-xloRD4VNWNBdj5vgo'
+                    'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=90&playlistId=UU-rP-oFlxQGpSLYHBlhIWkg&key=[YOUR_API_KEY]'
                 );
 
                 if (!response.ok) {
@@ -39,7 +39,7 @@ export default function Home() {
 
                 const data = await response.json();
                 setPlaylistData(data);
-                console.log(data);
+                // console.log(data);
             } catch (error) {
                 console.error('Error fetching data:', error);
             }

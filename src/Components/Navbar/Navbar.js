@@ -8,8 +8,6 @@ import Categories from "../Categories_Horizontal/Categories";
 
 export default function Navbar({ onSubmissionChange, onSubmissionText }) {
 
-    const [searchbtn, setsearchbtn] = useState(false);
-
     const [searchtext, setsearchtext] = useState("");
 
     function searchquery(e) {
@@ -29,10 +27,8 @@ export default function Navbar({ onSubmissionChange, onSubmissionText }) {
         <div className='navbar'>
             <div className='navbar-search-bar'>
                 <form onSubmit={handleSubmit}>
-                    <input type='text' onChange={searchquery} onClick={() => { setsearchbtn(true) }} placeholder='Search' autoComplete='on' />
-                    {/* {searchbtn ? <SearchOutlined className='searchicon' /> : null} */}
+                    <input type='text' onChange={searchquery} placeholder='Search' autoComplete='on' />
                     <SearchOutlined className='searchicon' />
-
                     {searchtext.trim() === "" ? (
                         <button type='submit' className='searchbar-search-btn' disabled>
                             <SearchOutlined className='search-btn-search-icon' />
